@@ -1,0 +1,82 @@
+<section class="py-6">
+  <div class="mx-auto max-w-5xl">
+    <h2 appScrollReveal class="heading-strong">{{ 'about.title' | t }}</h2>
+    <p appScrollReveal [delay]="100" class="mt-3 max-w-3xl text-slate-700 dark:text-slate-300">
+      {{ 'home.paragraph' | t }}
+    </p>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div appScrollReveal appTilt class="card">
+        <h3 class="text-lg font-semibold">{{ 'about.experiences' | t }}</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+          <li>• {{ 'about.exp.1' | t }}</li>
+          <li>• {{ 'about.exp.2' | t }}</li>
+          <li>• {{ 'about.exp.3' | t }}</li>
+        </ul>
+      </div>
+
+      <div appScrollReveal [delay]="100" appTilt class="card">
+        <h3 class="text-lg font-semibold">{{ 'about.stack' | t }}</h3>
+        <div class="mt-4 grid grid-cols-2 gap-2 text-xs sm:grid-cols-3">
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-red-500/30 text-[10px]">Ng</span>Angular</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-cyan-400/30 text-[10px]">Rx</span>React Native</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-amber-400/30 text-[10px]">Fb</span>Firebase</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-lime-400/30 text-[10px]">Nd</span>Node.js</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-blue-400/30 text-[10px]">Pg</span>PostgreSQL</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-indigo-400/30 text-[10px]">Ts</span>TypeScript</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-emerald-400/30 text-[10px]">Py</span>Python</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-fuchsia-400/30 text-[10px]">BI</span>Power BI</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-sky-400/30 text-[10px]">Tb</span>Tableau</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-slate-400/30 text-[10px]">Sql</span>SQL Server</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-amber-500/30 text-[10px]">Mg</span>MongoDB</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-white/10 text-[10px]">Gh</span>Git</span>
+          <span class="inline-flex items-center gap-2 rounded-md border px-2 py-1 bg-slate-100 border-slate-200 text-slate-700 dark:bg-white/5 dark:border-white/10 dark:text-slate-300"><span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-blue-300/30 text-[10px]">Dk</span>Docker</span>
+        </div>
+      </div>
+
+      <div appScrollReveal [delay]="200" appTilt class="card">
+        <h3 class="text-lg font-semibold">{{ 'about.highlights' | t }}</h3>
+        <ul class="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+          <li>• {{ 'about.hi.1' | t }}</li>
+          <li>• {{ 'about.hi.2' | t }}</li>
+          <li>• {{ 'about.hi.3' | t }}</li>
+          <li>• {{ 'about.hi.4' | t }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <h3 appScrollReveal class="text-xl font-semibold">{{ 'about.timeline' | t }}</h3>
+      <div class="mt-6 space-y-6">
+        <div appScrollReveal class="relative pl-6 text-slate-700 dark:text-slate-300">
+          <div class="absolute left-0 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-emerald-400 shadow-glow"></div>
+          <div class="absolute left-0 top-0 bottom-0 w-px bg-white/10"></div>
+          <div class="flex items-center justify-between">
+            <p class="font-medium">INDT</p>
+            <span class="text-xs text-slate-600 dark:text-slate-400">{{ 'about.timeline.indt.tag' | t }}</span>
+          </div>
+          <p class="text-sm">{{ 'about.timeline.indt.desc' | t }}</p>
+        </div>
+        <div appScrollReveal [delay]="50" class="relative pl-6 text-slate-700 dark:text-slate-300">
+          <div class="absolute left-0 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-fuchsia-400"></div>
+          <div class="absolute left-0 top-0 bottom-0 w-px bg-white/10"></div>
+          <div class="flex items-center justify-between">
+            <p class="font-medium">Geoforce Inc.</p>
+            <span class="text-xs text-slate-600 dark:text-slate-400">{{ 'about.timeline.geo.tag' | t }}</span>
+          </div>
+          <p class="text-sm">{{ 'about.timeline.geo.desc' | t }}</p>
+        </div>
+        <div appScrollReveal [delay]="100" class="relative pl-6 text-slate-700 dark:text-slate-300">
+          <div class="absolute left-0 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-blue-400"></div>
+          <div class="absolute left-0 top-0 bottom-0 w-px bg-white/10"></div>
+          <div class="flex items-center justify-between">
+            <p class="font-medium">Paipe.co</p>
+            <span class="text-xs text-slate-600 dark:text-slate-400">{{ 'about.timeline.paipe.tag' | t }}</span>
+          </div>
+          <p class="text-sm">{{ 'about.timeline.paipe.desc' | t }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

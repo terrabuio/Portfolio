@@ -1,0 +1,53 @@
+<section class="py-6">
+  <div class="mx-auto max-w-3xl">
+    <h2 appScrollReveal class="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900 dark:text-white">{{ 'contact.title' | t }}</h2>
+    <p appScrollReveal [delay]="100" class="mt-3 text-slate-600 dark:text-slate-300">{{ 'contact.subtitle' | t }}</p>
+
+    <div class="mt-8 grid gap-8 md:grid-cols-2">
+      <form #f="ngForm" (ngSubmit)="sendMail()" class="card">
+        <div class="space-y-4">
+          <div>
+            <label class="mb-1 block text-sm text-slate-700 dark:text-slate-300">{{ 'contact.name' | t }}</label>
+            <input [(ngModel)]="name" name="name" required type="text" placeholder="{{ 'contact.name' | t }}" class="w-full rounded-lg border bg-white border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-slate-900/10 dark:bg-white/5 dark:border-white/15 dark:text-slate-100 dark:placeholder:text-slate-500">
+            <p *ngIf="f.submitted && !name" class="mt-1 text-xs text-red-500">{{ 'contact.error.name' | t }}</p>
+          </div>
+          <div>
+            <label class="mb-1 block text-sm text-slate-700 dark:text-slate-300">{{ 'contact.email' | t }}</label>
+            <input [(ngModel)]="email" name="email" required email type="email" placeholder="email@exemplo.com" class="w-full rounded-lg border bg-white border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-slate-900/10 dark:bg-white/5 dark:border-white/15 dark:text-slate-100 dark:placeholder:text-slate-500">
+            <p *ngIf="f.submitted && (!email)" class="mt-1 text-xs text-red-500">{{ 'contact.error.email' | t }}</p>
+          </div>
+          <div>
+            <label class="mb-1 block text-sm text-slate-700 dark:text-slate-300">{{ 'contact.message' | t }}</label>
+            <textarea [(ngModel)]="message" name="message" required rows="5" placeholder="{{ 'contact.message' | t }}" class="w-full resize-none rounded-lg border bg-white border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:ring-2 focus:ring-slate-900/10 dark:bg-white/5 dark:border-white/15 dark:text-slate-100 dark:placeholder:text-slate-500"></textarea>
+            <p *ngIf="f.submitted && !message" class="mt-1 text-xs text-red-500">{{ 'contact.error.message' | t }}</p>
+          </div>
+          <button type="submit" [disabled]="!f.form.valid" class="btn-primary w-full disabled:opacity-60 disabled:cursor-not-allowed">{{ 'contact.send' | t }}</button>
+        </div>
+      </form>
+
+      <div class="space-y-4">
+        <div appScrollReveal class="card">
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white">E-mail</h3>
+          <a href="mailto:bernardobarros8@gmail.com" class="mt-2 inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100 text-slate-700 dark:bg-white/10 dark:text-inherit">@</span>
+            bernardobarros8@gmail.com
+          </a>
+        </div>
+        <div appScrollReveal [delay]="100" class="card">
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white">LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/bernardo-terrabuio-paes-de-barros-6b9877214/" target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/10 text-blue-600 dark:bg-blue-500/20 dark:text-inherit">in</span>
+            /in/bernardo-terrabuio-paes-de-barros-6b9877214
+          </a>
+        </div>
+        <div appScrollReveal [delay]="150" class="card">
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Telefone</h3>
+          <p class="mt-2 inline-flex items-center gap-2 text-slate-700 dark:text-slate-300">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600 dark:bg-emerald-500/20 dark:text-inherit">📞</span>
+            +55 11 99292-4167
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
