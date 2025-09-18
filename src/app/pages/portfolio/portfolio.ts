@@ -25,7 +25,7 @@ export class Portfolio {
       techs: ['Angular', 'Node.js', 'PostgreSQL', 'Docker'],
       status: 'Prod',
       links: { github: '#', demo: '#' },
-      images: ['/projects/log1.svg', '/projects/log2.svg', '/projects/log3.svg']
+      images: ['projects/log1.svg', 'projects/log2.svg', 'projects/log3.svg']
     },
     {
       id: 'mobile-5g',
@@ -34,7 +34,7 @@ export class Portfolio {
       techs: ['React Native', 'Firebase', 'TypeScript'],
       status: 'P&D',
       links: { github: '#', demo: '#' },
-      images: ['/projects/5g1.svg', '/projects/5g2.svg']
+      images: ['projects/5g1.svg', 'projects/5g2.svg']
     },
     {
       id: 'bi-etl',
@@ -43,7 +43,7 @@ export class Portfolio {
       techs: ['Power BI', 'Tableau', 'SSIS', 'Talend', 'BigQuery'],
       status: 'Data',
       links: { docs: '#', demo: '#' },
-      images: ['/projects/bi1.svg', '/projects/bi2.svg']
+      images: ['projects/bi1.svg', 'projects/bi2.svg']
     }
   ]);
 
@@ -73,7 +73,7 @@ export class Portfolio {
         techs: ['Angular','Node.js','PostgreSQL','Docker'],
         status: t('portfolio.status.prod'),
         links: { github: 'https://github.com/Berntpb03' },
-        images: ['/projects/log1.svg','/projects/log2.svg','/projects/log3.svg']
+        images: ['projects/log1.svg','projects/log2.svg','projects/log3.svg']
       });
     } else if (id === 'mobile-5g') {
       this.open({
@@ -83,7 +83,7 @@ export class Portfolio {
         techs: ['React Native','Firebase','TypeScript'],
         status: t('portfolio.status.pd'),
         links: { github: 'https://github.com/Berntpb03' },
-        images: ['/projects/5g1.svg','/projects/5g2.svg']
+        images: ['projects/5g1.svg','projects/5g2.svg']
       });
     } else {
       this.open({
@@ -93,7 +93,7 @@ export class Portfolio {
         techs: ['Power BI','Tableau','SSIS','Talend','BigQuery'],
         status: t('portfolio.status.data'),
         links: { github: 'https://github.com/Berntpb03' },
-        images: ['/projects/bi1.svg','/projects/bi2.svg']
+        images: ['projects/bi1.svg','projects/bi2.svg']
       });
     }
   }
